@@ -1,7 +1,8 @@
 const express = require('express')
 const errors = require('http-errors')
 const cors = require('cors')
-const config = require('../config')
+const env = process.env.NODE_ENV || 'test';
+const config = require('../config')[env]
 
 const { json, urlencoded } = express
 
