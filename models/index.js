@@ -10,6 +10,12 @@ const db = {};
 
 const sequelize = new Sequelize(uri, dbOptions);
 
+sequelize.authenticate().then(() => {
+  console.log('DB connection established!!!')
+}).catch((err) => {
+  console.log('DB connection failed!!!')
+})
+
 fs
   .readdirSync(__dirname)
   .filter(file => {
