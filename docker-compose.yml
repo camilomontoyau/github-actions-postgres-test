@@ -1,0 +1,11 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:13.2
+    hostname: postgres
+    environment:
+      - POSTGRES_USER=test_user
+      - POSTGRES_PASSWORD=test_pwd
+      - POSTGRES_DB=test_db
+    ports:
+      - 5432:5432
