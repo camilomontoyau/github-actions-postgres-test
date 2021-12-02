@@ -1,7 +1,7 @@
 const express = require('express')
 const errors = require('http-errors')
 const cors = require('cors')
-const config = require('./config')
+const config = require('../config')
 
 const { json, urlencoded } = express
 
