@@ -3,7 +3,7 @@ const express = require('express')
 const errors = require('http-errors')
 
 const router = express.Router()
-const User = require('./user.model')
+const { User } = require('../../models')
 
 router.get('/', async (req, res) => {
   const { rows = [], count } = await User.findAndCountAll()
