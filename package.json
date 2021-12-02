@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test standard && jest --coverage"
+    "start": "node ./src/index.js",
+    "test": "NODE_ENV=test jest"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "jest": "^27.4.3"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "sequelize": "^6.12.0-alpha.1"
   }
