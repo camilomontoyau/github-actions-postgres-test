@@ -6,11 +6,15 @@ const router = express.Router()
 const { User } = require('../../models')
 
 router.get('/', async (req, res) => {
-  const { rows = [], count } = await User.findAndCountAll()
+  try {
+    const { rows = [], count } = await User.findAndCountAll()
     return res.status(200).json({
       total: count,
       items: rows
-    })
+    })  
+  } catch (error) {
+    console.log(error)
+  }
 })
 
 module.exports = router
