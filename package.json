@@ -6,9 +6,9 @@
   "scripts": {
     "start": "node ./src/index.js",
     "test": "NODE_ENV=test jest",
-    "db:migrate": "npx sequelize-cli db:migrate --url 'postgres://localhost:5432/test_db'",
-    "db:seed:all": "npx sequelize-cli db:seed:all --url 'postgres://localhost:5432/test_db'",
-    "db:seed:undo": "npx sequelize-cli db:seed:undo:all --url 'postgres://localhost:5432/test_db'"
+    "db:migrate": "npx sequelize-cli db:migrate --url 'postgres://localhost/runner'",
+    "db:seed:all": "npx sequelize-cli db:seed:all --url 'postgres://localhost/runner'",
+    "db:seed:undo": "npx sequelize-cli db:seed:undo:all --url 'postgres://localhost/runner'"
   },
   "keywords": [],
   "author": "",

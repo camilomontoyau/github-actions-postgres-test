@@ -1,7 +1,7 @@
 module.exports = {
   "development": null,
   "test": {
-    uri: 'postgres://localhost:5432/test_db',
+    uri: 'postgres://localhost/runner',
     dbOptions: {
       define: {
         timestamps: true,
