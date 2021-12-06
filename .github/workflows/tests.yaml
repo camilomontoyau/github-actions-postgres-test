@@ -14,5 +14,9 @@ jobs:
         node-version: 14.15.0
     - name: setup
       run: npm install
+    - name: run migrations
+      run: npm run db:migrate
+    - name: run seeds
+      run: npm run db:seed:all
     - name: test
       run: npm test
