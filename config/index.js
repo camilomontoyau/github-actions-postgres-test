@@ -1,7 +1,7 @@
 module.exports = {
   "development": null,
   "test": {
-    uri: 'postgres://localhost/runner',
+    uri: process.env.POSTGRES_URL,
     dbOptions: {
       define: {
         timestamps: true,

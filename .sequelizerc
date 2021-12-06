@@ -1,0 +1,6 @@
+const env = process.env.NODE_ENV || 'test';
+const { uri: url } = require('./config')[env];
+
+module.exports = {
+  url
+};
